@@ -1,3 +1,43 @@
-.prodotto{
+*{
+  box-sizing: border-box;
+}
+main{
+  width: 960px;
+  margin: auto;
+  background-image: linear-gradient(to right, rgb(75, 88, 233) , rgb(152, 188, 231));
+}
+.row{
+  text-align: center;
+  padding: 20px;
+}
+.box{
   display: inline-block;
+  position: relative;
+}
+.sconto{
+  background-color: red;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+.cuore{
+  display: none;
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  color: red;
+}
+.box:hover{
+  cursor: pointer;
+}
+.box:hover .cuore{
+  display: block;
 }
