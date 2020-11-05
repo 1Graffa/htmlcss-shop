@@ -21,10 +21,12 @@ main{
   line-height: 45px;
   border-radius: 50%;
   text-align: center;
-  border: 2px;
   position: absolute;
   top: 1px;
   right: 1px;
+}
+.box:nth-child(even) > .sconto{
+  background-color: green;
 }
 .cuore{
   display: none;
